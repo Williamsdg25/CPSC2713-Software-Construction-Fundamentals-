@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace SearchProgram
+namespace WebBrowser.UI
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace SearchProgram
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new txtSearchApp());
+            Application.Run(new Form1());
         }
     }
 }

@@ -5,55 +5,73 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.IO;
 using System.Windows.Forms;
 
-namespace SearchProgram
+namespace WebBrowser.UI
 {
-    public partial class txtSearchApp : Form
-    {   //Create an open file dialog object for getting the file name
-        OpenFileDialog openFileDialog1 = new OpenFileDialog();
-        //Variable to store file name
-        public string fileName;
-
-        public txtSearchApp()
+    public partial class Form1 : Form
+    {
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ExitWebBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
-        //Browse button for getting file name
-        private void btnBrowse_Click(object sender, EventArgs e)
+        private void BoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Get file name
-            DialogResult result = openFileDialog1.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                fileName = openFileDialog1.FileName;
-            }
+            MessageBox.Show("Ken Scanlon's WebBrowser; Student Number: 904025969");
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void TabPage1_Click(object sender, EventArgs e)
         {
-            //Reader get file path
-            StreamReader sr = new StreamReader(path: fileName);
-            //Read until end
-            while (!sr.EndOfStream)
-            {
-                //Each line
-                var line = sr.ReadLine();
-                //if line is not empty
-                if (String.IsNullOrEmpty(line)) continue;
-                //Serch for key word
-                if (line.IndexOf(txtWord.Text, StringComparison.CurrentCultureIgnoreCase) >= 0)
-                {
-                    lstResult.Items.Add(line);
-                }
-            }
+
+        }
+
+        private void TabControl2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControl2_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TabPage newPage = new TabPage("New Page");
+            tabControl1.TabPages.Add(newPage);
+#pragma warning disable IDE0017 // Simplify object initialization
+            TabControl tc = new TabControl();
+#pragma warning restore IDE0017 // Simplify object initialization
+            tc.Dock = DockStyle.Fill;
+            newPage.Controls.Add(tc);
+        }
+
+        private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Remove(tabControl1.SelectedTab);
+        }
+
+        private void TabControl2_Load_1(object sender)
+        {
+
+        }
+
+        private void ManageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var historyForm = new HistoryManagerForm();
+            historyForm.ShowDialog();
+        }
+
+        private void ManageBookmarksToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var bookmarkForm = new BookmarkManagerForm();
+            bookmarkForm.ShowDialog();
         }
     }
 }

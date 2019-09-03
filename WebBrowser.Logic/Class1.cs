@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace WebBrowser.Logic
 {
-    public class Class1
+    public class BookmarkItem
     {
+        public string URL { get; set; }
+        public string Title { get; set; }
+        public int Id { get; set; }
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SearchProgram.Properties
+namespace WebBrowser.UI.Properties
 {
 
 

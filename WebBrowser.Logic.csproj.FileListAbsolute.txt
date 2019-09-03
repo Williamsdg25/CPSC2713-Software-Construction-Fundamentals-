@@ -1,0 +1,12 @@
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Logic.dll
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Logic.pdb
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.pdb
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csprojAssemblyReference.cache
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CoreCompileInputs.cache
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CopyComplete
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll.config
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\BrowserDatabase.mdf
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 5\Project\WebBrowser\WebBrowser.Logic\bin\Debug\BrowserDatabase_log.ldf

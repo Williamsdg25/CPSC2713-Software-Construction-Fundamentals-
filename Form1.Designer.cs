@@ -1,6 +1,6 @@
-﻿namespace DormMealPlanCalculator
+﻿namespace SearchProgram
 {
-    partial class DormAndMealPlanForm
+    partial class txtSearchApp
     {
         /// <summary>
         /// Required designer variable.
@@ -28,102 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.selectDormLabel = new System.Windows.Forms.Label();
-            this.selectMealLabel = new System.Windows.Forms.Label();
-            this.dormListBox = new System.Windows.Forms.ListBox();
-            this.mealsListBox = new System.Windows.Forms.ListBox();
-            this.totalButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.txtWord = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.lstResult = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // selectDormLabel
+            // label1
             // 
-            this.selectDormLabel.AutoSize = true;
-            this.selectDormLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectDormLabel.Location = new System.Drawing.Point(130, 122);
-            this.selectDormLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.selectDormLabel.Name = "selectDormLabel";
-            this.selectDormLabel.Size = new System.Drawing.Size(328, 31);
-            this.selectDormLabel.TabIndex = 0;
-            this.selectDormLabel.Text = "Select a Dormitory Type";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(67, 226);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Search/Word";
             // 
-            // selectMealLabel
+            // btnBrowse
             // 
-            this.selectMealLabel.AutoSize = true;
-            this.selectMealLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectMealLabel.Location = new System.Drawing.Point(816, 122);
-            this.selectMealLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.selectMealLabel.Name = "selectMealLabel";
-            this.selectMealLabel.Size = new System.Drawing.Size(263, 31);
-            this.selectMealLabel.TabIndex = 1;
-            this.selectMealLabel.Text = "Select a Meal Type";
+            this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowse.Location = new System.Drawing.Point(60, 82);
+            this.btnBrowse.Name = "btnBrowse";
+            this.btnBrowse.Size = new System.Drawing.Size(163, 49);
+            this.btnBrowse.TabIndex = 1;
+            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // dormListBox
+            // txtWord
             // 
-            this.dormListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dormListBox.FormattingEnabled = true;
-            this.dormListBox.ItemHeight = 31;
-            this.dormListBox.Items.AddRange(new object[] {
-            "Allen Hall",
-            "Pike Hall",
-            "Farthing Hall",
-            "University Suites"});
-            this.dormListBox.Location = new System.Drawing.Point(137, 236);
-            this.dormListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dormListBox.Name = "dormListBox";
-            this.dormListBox.Size = new System.Drawing.Size(463, 438);
-            this.dormListBox.TabIndex = 2;
+            this.txtWord.Location = new System.Drawing.Point(311, 226);
+            this.txtWord.Multiline = true;
+            this.txtWord.Name = "txtWord";
+            this.txtWord.Size = new System.Drawing.Size(252, 47);
+            this.txtWord.TabIndex = 2;
             // 
-            // mealsListBox
+            // btnSearch
             // 
-            this.mealsListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mealsListBox.FormattingEnabled = true;
-            this.mealsListBox.ItemHeight = 31;
-            this.mealsListBox.Items.AddRange(new object[] {
-            "7 meals per week",
-            "14 meals per week",
-            "Unlimited meals"});
-            this.mealsListBox.Location = new System.Drawing.Point(813, 236);
-            this.mealsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.mealsListBox.Name = "mealsListBox";
-            this.mealsListBox.Size = new System.Drawing.Size(398, 438);
-            this.mealsListBox.TabIndex = 3;
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(215, 374);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(179, 53);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // totalButton
+            // lstResult
             // 
-            this.totalButton.Location = new System.Drawing.Point(261, 770);
-            this.totalButton.Name = "totalButton";
-            this.totalButton.Size = new System.Drawing.Size(197, 63);
-            this.totalButton.TabIndex = 4;
-            this.totalButton.Text = "Show Total";
-            this.totalButton.UseVisualStyleBackColor = true;
-            this.totalButton.Click += new System.EventHandler(this.totalButton_Click);
+            this.lstResult.FormattingEnabled = true;
+            this.lstResult.ItemHeight = 25;
+            this.lstResult.Location = new System.Drawing.Point(649, 178);
+            this.lstResult.Name = "lstResult";
+            this.lstResult.Size = new System.Drawing.Size(354, 279);
+            this.lstResult.TabIndex = 4;
             // 
-            // exitButton
+            // txtSearchApp
             // 
-            this.exitButton.Location = new System.Drawing.Point(906, 770);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(173, 61);
-            this.exitButton.TabIndex = 5;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // DormAndMealPlanForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 945);
-            this.Controls.Add(this.exitButton);
-            this.Controls.Add(this.totalButton);
-            this.Controls.Add(this.mealsListBox);
-            this.Controls.Add(this.dormListBox);
-            this.Controls.Add(this.selectMealLabel);
-            this.Controls.Add(this.selectDormLabel);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "DormAndMealPlanForm";
-            this.Text = "Dorm and Meal Plan Calculator";
+            this.ClientSize = new System.Drawing.Size(1040, 594);
+            this.Controls.Add(this.lstResult);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtWord);
+            this.Controls.Add(this.btnBrowse);
+            this.Controls.Add(this.label1);
+            this.Name = "txtSearchApp";
+            this.Text = "Search Program";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,12 +104,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label selectDormLabel;
-        private System.Windows.Forms.Label selectMealLabel;
-        private System.Windows.Forms.ListBox dormListBox;
-        private System.Windows.Forms.ListBox mealsListBox;
-        private System.Windows.Forms.Button totalButton;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.TextBox txtWord;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ListBox lstResult;
     }
 }
 

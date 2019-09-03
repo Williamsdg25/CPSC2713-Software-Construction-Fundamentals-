@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace DormMealPlanCalculator
+namespace SearchProgram
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace DormMealPlanCalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DormAndMealPlanForm());
+            Application.Run(new txtSearchApp());
         }
     }
 }

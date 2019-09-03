@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DormMealPlanCalculator.Properties
+namespace SearchProgram.Properties
 {
 
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DormMealPlanCalculator")]
+[assembly: AssemblyTitle("SearchProgram")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DormMealPlanCalculator")]
+[assembly: AssemblyProduct("SearchProgram")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d2a5c4df-ff1d-4787-a1c4-0f3ba109a3b2")]
+[assembly: Guid("6f9861b8-0c1a-444e-bbe0-e944b3b121f9")]
 
 // Version information for an assembly consists of the following four values:
 //

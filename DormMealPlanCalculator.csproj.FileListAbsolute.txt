@@ -1,0 +1,9 @@
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\bin\Debug\DormMealPlanCalculator.exe
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\bin\Debug\DormMealPlanCalculator.pdb
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.DormAndMealPlanForm.resources
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.Properties.Resources.resources
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.TotalChargeForm.resources
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.csproj.GenerateResource.cache
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.exe
+C:\Users\Scanl\Desktop\Auburn CS\CPSC2713-Software Construction Fundamentals\Module 4\Homework\DormMealPlanCalculator\DormMealPlanCalculator\obj\Debug\DormMealPlanCalculator.pdb

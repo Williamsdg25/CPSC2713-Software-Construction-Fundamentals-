@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabControl));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.backbttn = new System.Windows.Forms.ToolStripButton();
             this.forwardBttn = new System.Windows.Forms.ToolStripButton();
             this.refreshBttn = new System.Windows.Forms.ToolStripButton();
@@ -38,13 +39,22 @@
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.goBttn = new System.Windows.Forms.ToolStripButton();
             this.bookmarkBttn = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip1.SuspendLayout();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(100, 25);
+            this.toolStrip1.TabIndex = 0;
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backbttn,
             this.forwardBttn,
             this.refreshBttn,
@@ -53,11 +63,11 @@
             this.toolStripTextBox1,
             this.goBttn,
             this.bookmarkBttn});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1252, 39);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip2.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(1188, 39);
+            this.toolStrip2.TabIndex = 2;
+            this.toolStrip2.Text = "toolStrip2";
             // 
             // backbttn
             // 
@@ -97,7 +107,6 @@
             this.homeBttn.Name = "homeBttn";
             this.homeBttn.Size = new System.Drawing.Size(36, 36);
             this.homeBttn.Text = "Home";
-            this.homeBttn.Click += new System.EventHandler(this.homeBttn_Click);
             // 
             // toolStripSeparator2
             // 
@@ -106,8 +115,10 @@
             // 
             // toolStripTextBox1
             // 
+            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(800, 39);
+            this.toolStripTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.toolStripTextBox1_KeyDown);
             this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
             // 
             // goBttn
@@ -118,7 +129,7 @@
             this.goBttn.Name = "goBttn";
             this.goBttn.Size = new System.Drawing.Size(36, 36);
             this.goBttn.Text = "Go";
-            this.goBttn.Click += new System.EventHandler(this.goBttn_Click);
+            this.goBttn.Click += new System.EventHandler(this.toolStripTextBox1_Click);
             // 
             // bookmarkBttn
             // 
@@ -128,18 +139,27 @@
             this.bookmarkBttn.Name = "bookmarkBttn";
             this.bookmarkBttn.Size = new System.Drawing.Size(36, 36);
             this.bookmarkBttn.Text = "Bookmark";
-            this.bookmarkBttn.Click += new System.EventHandler(this.bookmarkBttn_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 39);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(1188, 753);
+            this.webBrowser1.TabIndex = 3;
             // 
             // TabControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.toolStrip2);
             this.Name = "TabControl";
-            this.Size = new System.Drawing.Size(1252, 874);
+            this.Size = new System.Drawing.Size(1188, 792);
             this.Load += new System.EventHandler(this.TabControl_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +168,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton backbttn;
         private System.Windows.Forms.ToolStripButton forwardBttn;
         private System.Windows.Forms.ToolStripButton refreshBttn;
@@ -156,5 +177,6 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripButton goBttn;
         private System.Windows.Forms.ToolStripButton bookmarkBttn;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

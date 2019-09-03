@@ -16,44 +16,50 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
-        private void TabControl_Load(object sender, EventArgs e)
+        public void TabControl_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void backbttn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void forwardBttn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void refreshBttn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void homeBttn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        public void toolStripTextBox1_Click(object sender, EventArgs e)
         {
             webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
         }
 
-        private void goBttn_Click(object sender, EventArgs e)
+        public void toolStripTextBox1_Click(object sender, KeyPressEventArgs e)
         {
-
+            webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
         }
 
-        private void bookmarkBttn_Click(object sender, EventArgs e)
+        public void goBttn_Click(object sender, EventArgs e)
         {
+            webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
+        }
 
+        private void toolStripTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
+            }
+        }
+
+        private void backbttn_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoBack();
+        }
+
+        private void forwardBttn_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoForward();
+        }
+
+        private void refreshBttn_Click(object sender, EventArgs e)
+        {
+            if (!webBrowser1.Url.Equals("about:blank"))
+            {
+                webBrowser1.Refresh();
+            }
         }
     }
 }

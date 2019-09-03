@@ -1,4 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 namespace WebBrowser.UI
@@ -10,12 +16,12 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
-        public void exitWebBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitWebBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        public void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Ken Scanlon's WebBrowser; Student Number: 904025969");
         }
@@ -25,24 +31,28 @@ namespace WebBrowser.UI
 
         }
 
-        private void toolStripTextBox1_Click(object sender, EventArgs e)
-        {
-            webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
-        }
-
-        private void toolStripTextBox1_Click(object sender, KeyPressEventArgs e)
-        {
-            webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
-        }
-
-        private void goBttn_Click(object sender, EventArgs e)
-        {
-            webBrowser1.Navigate(toolStripTextBox1.Text.ToString());
-        }
-
         private void tabControl2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabControl2_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TabPage newPage = new TabPage("New Page");
+            tabControl1.TabPages.Add(newPage);
+            TabControl tc = new TabControl();
+            tc.Dock = DockStyle.Fill;
+            newPage.Controls.Add(tc);
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Remove(tabControl1.SelectedTab);
         }
     }
 }

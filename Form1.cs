@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using WebBrowser.Logic;
 
 namespace WebBrowser.UI
 {
@@ -28,7 +29,7 @@ namespace WebBrowser.UI
 
         private void TabPage1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void TabControl2_Load(object sender, EventArgs e)
@@ -72,6 +73,30 @@ namespace WebBrowser.UI
         {
             var bookmarkForm = new BookmarkManagerForm();
             bookmarkForm.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControl2_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /* HistoryManagerForm form = new HistoryManagerForm();
+             var items = HistoryManager.GetItems();
+             form.ClearHistory();*/
+            HistoryManager.DeleteHistory();
+
+        }
+
+        private void PrintPageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -27,5 +27,32 @@ namespace WebBrowser.UI
                 listBox1.Items.Add(string.Format("{0} ({1})", item.Title, item.URL));
             }
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            var items = BookmarkManager.GetItems();
+            listBox1.Items.Clear();
+
+            foreach (var item in items)
+            {
+                if (item.Title.Contains(textBox1.Text))
+                {
+                    listBox1.Items.Add(string.Format("{0} ({1})", item.Title, item.URL));
+                }
+            }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            var items = BookmarkManager.GetItems();
+
+            foreach (var item in items)
+            {
+                if (item.Title.Contains(textBox1.Text))
+                {
+                    listBox1.Items.Remove(string.Format("{0} ({1})", item.Title, item.URL));
+                }
+            }
+        }
     }
 }
